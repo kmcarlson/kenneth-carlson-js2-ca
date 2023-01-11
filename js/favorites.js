@@ -9,29 +9,25 @@ function renderFavs() {
   favoritesContainer.innerHTML = "";
   const favList = getExistingFavs();
 
-
-  
-    favList.forEach((product) => {
-      favoritesContainer.innerHTML += `
+  favList.forEach((info) => {
+    favoritesContainer.innerHTML += `
         <div class="product">
-           <div class="title"> ${product.title} </div>
-            <div class="price"> ${product.price} </div>
+          <div class="price"> ${info.id} </div>
+           <div class="title"> ${info.title} </div>
+            
         </div>
         `;
-    })
-  ;
+  });
 }
 
 function getExistingFavs() {
   const favs = localStorage.getItem("favourites");
 
-
-
   if (favs === null || favs == "[]") {
-    favoritesContainer.innerHTML += "<h3>There are no items in the favorites</h3>"
+    favoritesContainer.innerHTML +=
+      "<h3>There are no items in the favorites</h3>";
     return [];
   } else {
-
     return JSON.parse(favs);
   }
 }
@@ -41,10 +37,10 @@ function saveFavs(favs) {
 }
 
 function clearFavs() {
-  localStorage.removeItem("favourites")
-  renderFavs()
+  localStorage.removeItem("favourites");
+  renderFavs();
 }
 
-function setBtnEvents(){
+function setBtnEvents() {
   document.getElementById("btnClear").onclick = clearFavs;
 }
