@@ -14,11 +14,7 @@ async function getApi() {
   resultsContainer.innerHTML = "";
 
   for (let i = 0; i < info.length; i++) {
-    // if (val != "" && parseFloat(info[i].title) >= parseFloat(val)) {
-    //   continue;
-    // }
-
-    if (!info[i].title.includes(val)) {
+    if (!info[i].title.toLowerCase().includes(val.toLowerCase())) {
       break;
     }
 
