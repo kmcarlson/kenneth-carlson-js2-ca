@@ -26,7 +26,7 @@ function getExistingFavs() {
 
   if (favs === null || favs == "[]") {
     favoritesContainer.innerHTML +=
-      "<h3>There are no items in the favorites</h3>";
+      "<h3 >There are no items in the favorites</h3>";
     return [];
   } else {
     return JSON.parse(favs);

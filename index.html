@@ -7,21 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>JavaScript 2 CA</title>
 
-    <h1>JavaScript 2 CA</h1>
-    <nav>
-      <a href="index.html">Products</a> | <a href="Favourites.html">Favourites</a> |
+
+
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">JavaScript 2 CA</span>
+      </div>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Products
+          </a>
+          <a href="favourites.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Favourites
+          </a>
+        </div>
+      </div>
     </nav>
 
-
-
-    
-
-    <div><input class="" type="text" id="filter" onkeyup="getApi()" /></div>
-
-    <div id="results">
-  
-    </div>
   </head>
+
+<div class="flex justify-center mt-4">
+   <input  class="placeholder-gray-500 text-sm font-medium border-2 border-black-500" placeholder="Search by title" type="text" id="filter" onkeyup="getApi()" />
+  </div>
+
+  <div  id="results" class="flex justify-evenly justify-center pl-5 flex-col p md:flex-row mt-4 ">
 
   <body>
     <script src="js/index.js"></script>

@@ -23,7 +23,7 @@ async function getApi() {
         <div class="id"> ${info[i].id} </div>
         <div class="title"> ${info[i].title} </div>
         <div class="author"> ${info[i].author} </div>
-        <button class="bg-indigo-500" data-id="${info[i].id}" data-title="${info[i].title}" data-author="${info[i].author}"> ADD </button>
+        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" data-id="${info[i].id}" data-title="${info[i].title}" data-author="${info[i].author}"> ADD </button>
     </div>
     `;
   }
