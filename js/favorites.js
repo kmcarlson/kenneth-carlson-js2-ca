@@ -12,9 +12,10 @@ function renderFavs() {
   favList.forEach((info) => {
     favoritesContainer.innerHTML += `
         <div class="product">
-          <div class="price"> ${info.id} </div>
-           <div class="title"> ${info.title} </div>
-            
+          <div class="id"> ${info.id} </div>
+          <div class="title"> ${info.title} </div>
+          <div class="title"> ${info.author} </div>
+          
         </div>
         `;
   });
