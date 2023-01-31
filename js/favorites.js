@@ -14,7 +14,7 @@ function renderFavs() {
         <div class="product">
           <div class="id"> ${info.id} </div>
           <div class="title"> ${info.title} </div>
-          <div class="title"> ${info.author} </div>
+          <div class="author"> ${info.author} </div>
           
         </div>
         `;
